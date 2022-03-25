@@ -43,42 +43,44 @@
   
   <div class="container">
     <div class="row">
-      <div class="col">
-        <p class="p-about">
-          Hello! My name is Krutik Shah. I am an Electrical & Computer Engineering major,
-          at Rowan University, Class of 2023! I am passionate about PCB design & assembly,
-          3D printing, and robotics!
-        </p>
-        <h3 class="h3-about">Biography</h3>
+      <div class="d-flex flex-row flex-wrap justify-content-center">
+        <div class="col">
           <p class="p-about">
-            I was born in Gujarat, India on April 10, 2000. I moved to the US in 2007 with my parents,
-            raised in Flemington, NJ where I went to Hunterdon Central Regional High School.
-            There at the high school, I was a part of the FIRST Robotics Team (FRC) Team 3637, 
-            where I developed a passion for engineering. I would not be where I am today without
-            the experience and knowledge I gained through that team. I was also a student worker
-            for school's IT department. After applying to my colleges, I decided
-            to go to Rowan University for an ECE degree, and am now currently a student helper for
-            the ECE department, working in the Resource Center, Fabrication Center, and Assembly Center.
+            Hello! My name is Krutik Shah. I am an Electrical & Computer Engineering major,
+            at Rowan University, Class of 2023! I am passionate about PCB design & assembly,
+            3D printing, and robotics!
           </p>
-        <h3 class="h3-about">Hobbies</h3>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <ul>
-                <li>3D Printing</li>
-                <li>Web Developmnet</li>
-                <li>Photography</li>
-                <li>Video Production</li>
-              </ul>
+          <h3 class="h3-about">Biography</h3>
+            <p class="p-about">
+              I was born in Gujarat, India on April 10, 2000. I moved to the US in 2007 with my parents,
+              raised in Flemington, NJ where I went to Hunterdon Central Regional High School.
+              There at the high school, I was a part of the FIRST Robotics Team (FRC) Team 3637, 
+              where I developed a passion for engineering. I would not be where I am today without
+              the experience and knowledge I gained through that team. I was also a student worker
+              for school's IT department. After applying to my colleges, I decided
+              to go to Rowan University for an ECE degree, and am now currently a student helper for
+              the ECE department, working in the Resource Center, Fabrication Center, and Assembly Center.
+            </p>
+          <h3 class="h3-about">Hobbies</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li>3D Printing</li>
+                  <li>Web Developmnet</li>
+                  <li>Photography</li>
+                  <li>Video Production</li>
+                </ul>
+              </div>
             </div>
           </div>
+            
+          <a href="Resume.pdf" class="btn btn-primary">Resume</a>
+          <a href="https://www.linkedin.com/in/krutik-p-shah" class="btn btn-primary">LinkedIn</a>
         </div>
-          
-        <a href="Resume.pdf" class="btn btn-primary">Resume</a>
-        <a href="https://www.linkedin.com/in/krutik-p-shah" class="btn btn-primary">LinkedIn</a>
-      </div>
-      <div class="col">
-        <img src="Pictures/img1.jpg" class="d-block w-75 rounded mx-auto">
+        <div class="col">
+          <img src="Pictures/img1.jpg" class="d-block w-75 rounded mx-auto">
+        </div>
       </div>
     </div>
   </div>
@@ -89,43 +91,45 @@
     <div class="container">
       <div class="form h-100">
         <form class="mb-5" action="https://formspree.io/f/mwkyblao" method="post" id="contactForm" name="contactForm">
-          <div class="row">
-            <div class="col-md-6 form-group mb-5">
-              <label for="" class="col-form-label-right">Name *</label>
+          <div class="d-flex flex-row flex-wrap justify-content-center">
+          <!--<div class="row">-->
+            <div class="form-group mb-5" style="width:25em; justify-self:center;">
+              <label for="" class="col-form-label">Name *</label>
               <br>
-              <input type="text" class="form-control-right" name="name" id="name" placeholder="Your name" required>
+              <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
             </div>
-            <div class="col-md-6 form-group mb-5">
+            <div class="form-group mb-5" style="width:25em; justify-self:center;">
               <label for="" class="col-form-label">Email *</label>
               <br>
-              <input type="text" class="form-control-left" name="email" id="email" placeholder="Your email" required>
+              <input type="text" class="form-control" name="email" id="email" placeholder="Your email" required>
             </div>
-          </div>
+          <!--</div>-->
 
-          <div class="row">
-            <div class="col-md-6 form-group mb-5">
-              <label for="" class="col-form-label-right">Phone</label>
+          <!--<div class="row">-->
+            <div class="form-group mb-5" style="width:25em; justify-self:center;">
+              <label for="" class="col-form-label">Phone</label>
               <br>
-              <input type="text" class="form-control-right" name="phone" id="phone" placeholder="Phone #">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone #">
             </div>
-            <div class="col-md-6 form-group mb-5">
+            <div class="form-group mb-5" style="width:25em; justify-self:center;">
               <label for="" class="col-form-label">Company</label>
               <br>
-              <input type="text" class="form-control-left" name="company" id="company" placeholder="Company name">
+              <input type="text" class="form-control" name="company" id="company" placeholder="Company name">
             </div>
-          </div>
+          <!--</div>-->
 
-          <div class="row">
-            <div class="col-md-12 form-group mb-5">
-              <label for="message" class="col-form-label-right">Message *</label>
+          <!--<div class="row">-->
+            <div class="form-group mb-5" style="width:50em; justify-self:center;">
+              <label for="message" class="col-form-label">Message *</label>
               <textarea class="form-control-center" name="message" id="message" cols="30" rows="4" placeholder="Write your message" required></textarea>
             </div>
-          </div>
-          <div class="row-right">
-            <div class="col-md-12 form-group">
+          <!--</div>-->
+          <!--<div class="row-right">-->
+            <div class="form-group mb-5" style="width:25em; justify-self:center;">
               <button type="submit" class="btn btn-primary">Send</button>
               <span class="submitting"></span>
             </div>
+          <!--</div>-->
           </div>
         </form>
       </div>
