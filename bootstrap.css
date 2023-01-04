@@ -84,6 +84,10 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+a {
+  color: #bbbbbb;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -272,11 +276,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #bbbbbb;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #ffffff;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3415,8 +3419,8 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  color: #6c757d;
-  border-color: #6c757d;
+  color: #bbbbbb;
+  border-color: #999999;
 }
 .btn-outline-secondary:hover {
   color: #fff;
@@ -7920,7 +7924,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #bbbbbb !important;
 }
 
 .text-black-50 {
