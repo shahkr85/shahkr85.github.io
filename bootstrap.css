@@ -109,7 +109,7 @@ h1, .h1 {
 
 .h1-quote {
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Playfair Display', serif;
@@ -7521,7 +7521,7 @@ textarea.form-control-lg {
 }
 
 .mb-4 {
-  margin: 1.5rem !important;
+  margin: 1.5rem;
 }
 
 .mb-5 {
