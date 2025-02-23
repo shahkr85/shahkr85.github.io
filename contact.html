@@ -26,6 +26,12 @@
 
             gtag('config', 'G-9LXVKJ7DK8');
         </script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+            function onSubmit(token) {
+                document.getElementById("demo-form").submit();
+            }
+        </script>
     </head>
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
@@ -76,7 +82,12 @@
                                         <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                         <label for="message">Message</label>
                                     </div>
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-lg g-recaptcha" 
+                                            data-sitekey="6Ld7sd8qAAAAAIO-Uj_ZT4kkA8v6q1-dtgaxqjqR" 
+                                            data-callback='onSubmit' 
+                                            type='submit'>Submit</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
