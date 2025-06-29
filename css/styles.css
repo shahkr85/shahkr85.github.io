@@ -11611,8 +11611,8 @@ html {
   max-width: 40rem;
 }
 .profile .profile-img {
-  height: 80vw;
-  max-height: 50rem;
+  height: 35vw;
+  max-height: 28rem;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -11662,7 +11662,7 @@ html {
     width: 60vw;
   }
   .profile .profile-img {
-    height: 65vw;
+    height: 35vw;
   }
   .profile .dots-1 {
     width: 3vw;
