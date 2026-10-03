@@ -1,0 +1,5 @@
+.DS_Store
+
+# Original full-size photo/video uploads (web versions live in Pictures/Photography/web/)
+Pictures/Photography/*.jpeg
+Pictures/Photography/*.mov

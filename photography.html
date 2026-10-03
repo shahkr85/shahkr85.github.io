@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Photography by Krutik Shah." />
+        <meta name="author" content="Krutik Shah" />
+        <meta name="theme-color" content="#0D1117" />
+        <title>Krutik Shah - Photography</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Site theme-->
+        <link href="css/site.css" rel="stylesheet" />
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LXVKJ7DK8"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-9LXVKJ7DK8');
+        </script>
+    </head>
+    <body class="photo-page">
+        <main>
+            <!-- Navigation-->
+            <nav class="container nav" aria-label="Main">
+                <a class="brand" href="index.html">Krutik Shah<span class="cursor">_</span></a>
+                <div class="nav-links">
+                    <a href="index.html">/home</a>
+                    <a href="projects.html">/projects</a>
+                    <a href="photography.html" aria-current="page">/photos</a>
+                    <a href="contact.html">/contact</a>
+                    <a class="nav-resume" href="Resume.pdf">resume<span class="ext">.pdf</span> ↓</a>
+                </div>
+            </nav>
+
+            <!-- Hero: title + drone films-->
+            <header class="ph-hero">
+                <div class="glow" aria-hidden="true"></div>
+                <div class="ph-hero-text">
+                    <div class="label">// photography</div>
+                    <h1>Through the lens<span style="color: var(--accent)">_</span></h1>
+                    <p class="lead">Wildlife, mountains, cities and coastlines, from the ground and from the air.</p>
+                    <div class="ph-stats">
+                        <span><b>47</b> photos</span>
+                        <span><b>2</b> drone films</span>
+                        <span>Sony a7 III · iPhone · DJI</span>
+                    </div>
+                    <div class="btn-row">
+                        <a class="btn btn-primary" href="#gallery">View gallery ↓</a>
+                    </div>
+                    <button class="ph-toggle" type="button" id="film-toggle" aria-pressed="false"><i class="bi bi-pause-fill" aria-hidden="true"></i><span>Pause films</span></button>
+                </div>
+                <div class="ph-films">
+                    <figure class="ph-film">
+                        <video autoplay muted loop playsinline preload="auto" poster="Pictures/Photography/web/video/drone-1.jpg" aria-label="Aerial drone footage looking straight down at a forest beside a winding road">
+                            <source src="Pictures/Photography/web/video/drone-1.mp4" type="video/mp4" />
+                        </video>
+                        <figcaption class="meta"><span>Film 01 · Forest road</span><span class="ok">● DJI</span></figcaption>
+                    </figure>
+                    <figure class="ph-film">
+                        <video autoplay muted loop playsinline preload="auto" poster="Pictures/Photography/web/video/drone-2.jpg" aria-label="Aerial drone footage of waves breaking over rocks along a sandy beach">
+                            <source src="Pictures/Photography/web/video/drone-2.mp4" type="video/mp4" />
+                        </video>
+                        <figcaption class="meta"><span>Film 02 · Coastline</span><span class="ok">● DJI</span></figcaption>
+                    </figure>
+                </div>
+            </header>
+
+            <!-- Intro-->
+            <section class="ph-intro" id="intro">
+                <img src="Pictures/Photography/web/thumbs/photo_c9d58e68.jpg" alt="Krutik looking through a camera with a large lens" loading="lazy" />
+                <div class="ph-intro-text">
+                    <div class="label">// behind the camera</div>
+                    <h2>Photography is how I slow down.</h2>
+                    <p>When I'm not working on space systems, I'm usually outside with a camera. These are some favorites from safaris, the Himalayas, national parks and city streets, plus a few from the drone.</p>
+                </div>
+            </section>
+
+            <!-- Gallery (filled from Pictures/Photography/photos.json by js/gallery.js)-->
+            <div class="ph-tabs" id="filters" role="group" aria-label="Filter photos" hidden></div>
+            <section class="ph-gallery" id="gallery" aria-label="Gallery"></section>
+
+            <section class="container" id="empty" hidden>
+                <div class="terminal empty">
+                    <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span><span class="terminal-title">krutik@portfolio: ~/photography</span></div>
+                    <div class="terminal-body">
+                        <div><span class="prompt">$</span> <span class="cmd">ls ./photography</span></div>
+                        <div style="color: var(--muted)">Developing… new photos coming soon.</div>
+                        <div><span class="prompt">$</span> <span class="caret" aria-hidden="true"></span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to action-->
+            <section class="container ph-outro">
+                <div class="cta">
+                    <div class="glow" aria-hidden="true"></div>
+                    <div class="label">// contact</div>
+                    <h2>Like what you see?</h2>
+                    <div class="btn-row">
+                        <a class="btn btn-primary" href="contact.html">Get in touch</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Lightbox-->
+        <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+            <div class="lightbox-top">
+                <span id="lb-count"></span>
+                <button class="lb-btn" type="button" id="lb-close" aria-label="Close"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+            </div>
+            <div class="lightbox-stage" id="lb-stage">
+                <button class="lb-btn lb-prev" type="button" id="lb-prev" aria-label="Previous photo"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+                <img id="lb-img" alt="" />
+                <button class="lb-btn lb-next" type="button" id="lb-next" aria-label="Next photo"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+            </div>
+            <div class="lightbox-caption">
+                <span class="photo-title" id="lb-title"></span>
+                <span class="meta" id="lb-meta"></span>
+            </div>
+        </dialog>
+
+        <!-- Footer-->
+        <footer class="container footer">
+            <span>© 2026 Krutik Shah</span><span>exit 0</span>
+        </footer>
+
+        <script src="js/gallery.js"></script>
+    </body>
+</html>
