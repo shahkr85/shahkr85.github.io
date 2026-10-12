@@ -468,5 +468,25 @@
     "category": "Landscapes",
     "meta": "Sony a7 III · 2026",
     "alt": "Sun setting over layered hills"
+  },
+  {
+    "file": "web/full/img_7747.jpg",
+    "thumb": "web/thumbs/img_7747.jpg",
+    "width": 1124,
+    "height": 2000,
+    "title": "Sunset on the bluffs",
+    "category": "Landscapes",
+    "meta": "iPhone 15 Pro Max · 2026",
+    "alt": "Orange sunset over the ocean, seen from a rocky bluff covered in ice plant"
+  },
+  {
+    "file": "web/full/dsc02191.jpg",
+    "thumb": "web/thumbs/dsc02191.jpg",
+    "width": 1125,
+    "height": 2000,
+    "title": "Blue crab",
+    "category": "Animals",
+    "meta": "Sony a7 III · 2026",
+    "alt": "Iridescent blue crab gripping a dark branch at night"
   }
 ]
